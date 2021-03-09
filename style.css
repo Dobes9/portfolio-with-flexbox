@@ -2,146 +2,152 @@
 
 /* General Styles */
 
-body {}
-
-header {
-    background-color: #8d818c;
-    color: whitesmoke;
-    font-size: 18px;
+body {
 }
 
-main {}
+header {
+  background-color: #8d818c;
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+main {
+  padding: 10px;
+}
 
 section {
-    padding: 5px 0px;
-    margin: 0px;
+  padding: 5px 0px;
+  margin: 0px;
 }
 
 .group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .item {
-    flex: 1;
-    justify-content: space-between;
+  flex: 1;
+  justify-content: space-between;
 }
 
 /* Navigation */
 
-header nav {}
+header nav {
+}
 
 header .logo {
-    text-align: center;
-    font-size: 52px;
-    padding-top: 20px;
+  text-align: center;
+  font-size: 44px;
+  padding-top: 10px;
 }
 
 header nav ul {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding-top: 20px;
 }
 
 header nav ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 header nav ul li a {
-    text-decoration: none;
-    color: antiquewhite;
+  text-decoration: none;
+  color: antiquewhite;
 }
 
 /* Introduction */
 
 #home {
-    background-color: #96c3ce;
+  background-color: #96c3ce;
 }
 
 img {
-    width: 50%;
+  width: 100%;
+  justify-content: center;
 }
 
 /* About me */
 
 #about {
-    background-color: #4bc6b9;
+  background-color: #4bc6b9;
 }
 
 /* Projects */
 
 #projects {
-    background-color: #96c3ce;
+  background-color: #96c3ce;
 }
 
 /* Contact me */
 
 #contact {
-    background-color: #4bc6b9;
+  background-color: #4bc6b9;
 }
 
 #socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 25px;
 }
 
 #socials a {
-    padding-top: 10px;
-    width: 90px;
+  padding-top: 10px;
+  width: 90px;
 }
 
 #socials a img {
-    width:100px;
+  width: 100px;
 }
 
 /* Contact Form */
 
 form label {
-    display: block;
+  display: block;
 }
 
 form input,
 form textarea {
-    width: 95%;
-    margin-bottom: 20px;
+  width: 95%;
+  margin-bottom: 20px;
 }
 
 /* Footer bar */
 
 footer {
-    background-color: #8d818c;
-    color: whitesmoke;
-    text-align: center;
+  background-color: #8d818c;
+  color: whitesmoke;
+  text-align: center;
 }
 
 /* Desktop styling */
 
 @media all and (min-width: 800px) {
-    .header logo {
-        text-align: left;
-    }
-    
-    .group {
-        flex-direction: row;
-    }
+  .header logo {
+    text-align: left;
+    font-size: 52px;
+  }
 
-    .item {
-        flex: 1;
-        justify-content: space-between;
-    }
+  .group {
+    flex-direction: row;
+  }
 
-    header nav ul li a:hover {
-        color: white;
-    }
+  .item {
+    flex: 1;
+    justify-content: space-between;
+  }
 
-    #socials {
-        flex-direction: column;
-    }
+  header nav ul li a:hover {
+    color: white;
+  }
 
-    #socials a img {
-        width: 85px;
-    }
+  #socials {
+    flex-direction: column;
+  }
 
+  #socials a img {
+    width: 85px;
+  }
 }
